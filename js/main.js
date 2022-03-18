@@ -5,25 +5,25 @@ document.addEventListener('DOMContentLoaded', () => {
             id: 1,
             nombre: 'Papas',
             precio: 50,
-            imagen: 'patata.jpg'
+            
         },
         {
             id: 2,
             nombre: 'Cebolla',
             precio: 15,
-            imagen: 'cebolla.jpg'
+            
         },
         {
             id: 3,
             nombre: 'Calabaza',
             precio: 35,
-            imagen: 'calabacin.jpg'
+            
         },
         {
             id: 4,
             nombre: 'Frutillas',
             precio: 150,
-            imagen: 'fresas.jpg'
+            
         }
         
         
@@ -56,10 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const miNodoTitle = document.createElement('h5');
             miNodoTitle.classList.add('card-title');
             miNodoTitle.textContent = info.nombre;
-            // Imagen
-            const miNodoImagen = document.createElement('img');
-            miNodoImagen.classList.add('img-fluid');
-            miNodoImagen.setAttribute('src', info.imagen);
+                        
             // Precio
             const miNodoPrecio = document.createElement('p');
             miNodoPrecio.classList.add('card-text');
@@ -71,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
             miNodoBoton.setAttribute('marcador', info.id);
             miNodoBoton.addEventListener('click', anyadirProductoAlCarrito);
             // Insertamos
-            miNodoCardBody.appendChild(miNodoImagen);
+            
             miNodoCardBody.appendChild(miNodoTitle);
             miNodoCardBody.appendChild(miNodoPrecio);
             miNodoCardBody.appendChild(miNodoBoton);
